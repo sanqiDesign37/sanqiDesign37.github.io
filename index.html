@@ -2,51 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="e3UOCw1duD_mX6vsV-Lm9gaJnb5qjNEhDSQYuzwJjQw" />
-    <link rel="icon" href="./favicon.svg">
-    <title>三柒設計 Sanqi Design</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/official/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="e3UOCw1duD_mX6vsV-Lm9gaJnb5qjNEhDSQYuzwJjQw" />
+  <title>三柒設計 Sanqi Design</title>
+  <style>
+    body {
+      display: flex;
+      /* flex-direction: column; */
+    }
+
+    #app {
+      margin: 0 auto;
+      max-width: 1584px;
+      font-family: sans-serif;
+      color: #636363;
+    }
+  </style>
+  <script type="module" crossorigin src="/official/assets/index-DPQwA4ar.js"></script>
+  <link rel="stylesheet" crossorigin href="/official/assets/index-ZoWd2eci.css">
 </head>
 
 <body>
-    <header>三柒設計</header>
-    <main>
-        <h3>
-            <a href="https://sanqidesign37.github.io/official/">首頁</a>
-        </h3>
-        <section>
-            <h3>作品集</h3>
-            <ul id="container"></ul>
-        </section>
-    </main>
-
-    <script>
-        const listData = [
-            {
-                route: 'cyberpunk',
-                txt: '動漫介紹網站-電馭叛客:邊緣行者'
-            },
-            {
-                route: 'KuoDemo',
-                txt: '重機品牌介紹網站-Triumph'
-            },
-            {
-                route: 'eason_project',
-                txt: '中職啦啦隊介紹'
-            },
-            {
-                route: 'pohsun',
-                txt: '指原系偶像團體介紹'
-            }
-        ]
-
-        for (const item of listData) {
-            document.getElementById('container').innerHTML += `<li>
-                <a href="https://sanqidesign37.github.io/sample/${item.route}/" target="_blank">${item.txt}</a>
-            </li>`;
-        }
-    </script>
+  <div id="app"></div>
 </body>
 
 </html>
